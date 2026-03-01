@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AquaFlow — Water Tracker & Hydration Reminder. Support page." />
+  <title>AquaFlow — Support</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue-dark:   #0a6ebd;
+      --blue:        #1a8fe3;
+      --blue-light:  #4db8ff;
+      --blue-pale:   #e8f5ff;
+      --blue-mid:    #cce9ff;
+      --text:        #1a2533;
+      --text-sub:    #4a6078;
+      --white:       #ffffff;
+      --radius:      14px;
+      --shadow:      0 4px 24px rgba(10, 110, 189, 0.10);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--blue-pale);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: linear-gradient(145deg, #0a6ebd 0%, #1a8fe3 60%, #4db8ff 100%);
+      color: var(--white);
+      text-align: center;
+      padding: 64px 24px 48px;
+    }
+    .app-icon {
+      font-size: 72px;
+      line-height: 1;
+      margin-bottom: 16px;
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2));
+    }
+    header h1 {
+      font-size: clamp(2rem, 6vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+    }
+    .tagline {
+      font-size: 1.1rem;
+      opacity: 0.88;
+      max-width: 460px;
+      margin: 0 auto 6px;
+    }
+    .tagline-ru {
+      font-size: 0.95rem;
+      opacity: 0.70;
+      max-width: 460px;
+      margin: 0 auto 28px;
+      font-style: italic;
+    }
+    .btn-appstore {
+      display: inline-block;
+      background: var(--white);
+      color: var(--blue-dark);
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 12px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      letter-spacing: 0.3px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn-appstore:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
+
+    /* ── MAIN ── */
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    /* ── SECTION ── */
+    section {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 32px 28px;
+      margin-bottom: 24px;
+    }
+    section h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--blue-dark);
+      margin-bottom: 4px;
+    }
+    .section-title-ru {
+      font-size: 0.82rem;
+      color: var(--text-sub);
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    /* ── FEATURES ── */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 14px;
+    }
+    .feature-card {
+      background: var(--blue-pale);
+      border-radius: 10px;
+      padding: 16px 18px;
+      border-left: 4px solid var(--blue);
+    }
+    .feature-card .feat-icon { font-size: 1.4rem; margin-bottom: 6px; }
+    .feature-card h3 { font-size: 0.95rem; font-weight: 600; color: var(--text); margin-bottom: 3px; }
+    .feature-card p  { font-size: 0.82rem; color: var(--text-sub); margin: 0; }
+
+    /* ── FAQ ── */
+    details {
+      border-bottom: 1px solid var(--blue-mid);
+      padding: 14px 0;
+    }
+    details:last-child { border-bottom: none; }
+    summary {
+      font-weight: 600;
+      font-size: 0.97rem;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--text);
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; font-size: 1.3rem; color: var(--blue); transition: transform 0.2s; }
+    details[open] summary::after { content: "−"; }
+    .faq-answer { margin-top: 10px; color: var(--text-sub); font-size: 0.92rem; }
+    .faq-answer-ru { margin-top: 6px; color: #7a90a8; font-size: 0.83rem; font-style: italic; }
+
+    /* ── SUPPORT ── */
+    .contact-box {
+      background: linear-gradient(135deg, var(--blue-pale), var(--blue-mid));
+      border-radius: 10px;
+      padding: 20px 22px;
+      margin-top: 8px;
+    }
+    .contact-box p { font-size: 0.94rem; color: var(--text-sub); margin-bottom: 10px; }
+    .contact-box p.ru { font-size: 0.83rem; color: #7a90a8; font-style: italic; margin-bottom: 14px; }
+    .contact-box a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--blue);
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 11px 22px;
+      border-radius: 50px;
+      transition: background 0.15s;
+    }
+    .contact-box a:hover { background: var(--blue-dark); }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 28px 20px 40px;
+      color: var(--text-sub);
+      font-size: 0.83rem;
+    }
+    footer a { color: var(--blue); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 480px) {
+      header { padding: 48px 20px 36px; }
+      section { padding: 24px 18px; }
+      .features-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════ HEADER ══════════════ -->
+<header>
+  <div class="app-icon">💧</div>
+  <h1>AquaFlow</h1>
+  <p class="tagline">Stay hydrated, feel great. Track your daily water intake with ease.</p>
+  <p class="tagline-ru">Оставайтесь в тонусе — отслеживайте ежедневное потребление воды легко и удобно.</p>
+  <a class="btn-appstore" href="https://apps.apple.com/app/id000000000" target="_blank" rel="noopener">
+    ⬇&nbsp; Download on the App Store
+  </a>
+</header>
+
+<!-- ══════════════ MAIN ══════════════ -->
+<main>
+
+  <!-- FEATURES -->
+  <section>
+    <h2>Features</h2>
+    <p class="section-title-ru">Возможности</p>
+    <div class="features-grid">
+
+      <div class="feature-card">
+        <div class="feat-icon">📊</div>
+        <h3>Daily Intake Tracker</h3>
+        <p>Log every sip and watch your progress fill up in real time.<br>
+           <em style="font-size:0.80rem;color:#7a90a8;">Следите за суточной нормой воды в реальном времени.</em></p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feat-icon">🔔</div>
+        <h3>Smart Reminders</h3>
+        <p>Timely notifications keep you on track without being annoying.<br>
+           <em style="font-size:0.80rem;color:#7a90a8;">Умные напоминания в нужное время, без лишнего шума.</em></p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feat-icon">🎯</div>
+        <h3>Personalised Goals</h3>
+        <p>Set your target based on weight, activity, and climate.<br>
+           <em style="font-size:0.80rem;color:#7a90a8;">Личная цель с учётом веса, активности и климата.</em></p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feat-icon">🍵</div>
+        <h3>Multiple Drink Types</h3>
+        <p>Track water, tea, coffee, juice, and more.<br>
+           <em style="font-size:0.80rem;color:#7a90a8;">Вода, чай, кофе, сок — учитываем всё.</em></p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feat-icon">❤️</div>
+        <h3>Apple Health Sync</h3>
+        <p>Sync hydration data with the Health app automatically.<br>
+           <em style="font-size:0.80rem;color:#7a90a8;">Автоматическая синхронизация с приложением Здоровье.</em></p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feat-icon">📈</div>
+        <h3>Weekly &amp; Monthly Stats</h3>
+        <p>Beautiful charts to visualise your hydration habits over time.<br>
+           <em style="font-size:0.80rem;color:#7a90a8;">Графики недельной и месячной статистики.</em></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <h2>FAQ</h2>
+    <p class="section-title-ru">Часто задаваемые вопросы</p>
+
+    <details>
+      <summary>How much water should I drink per day?</summary>
+      <div class="faq-answer">
+        A common recommendation is 8 cups (about 2 litres) per day, but the optimal amount
+        depends on your body weight, activity level, and climate. AquaFlow calculates a
+        personalised goal for you automatically.
+      </div>
+      <div class="faq-answer-ru">
+        Стандартная рекомендация — 8 стаканов (около 2 литров) в день, но оптимальный объём
+        зависит от вашего веса, активности и климата. AquaFlow автоматически рассчитает
+        персональную норму.
+      </div>
+    </details>
+
+    <details>
+      <summary>Does AquaFlow sync with Apple Health?</summary>
+      <div class="faq-answer">
+        Yes! AquaFlow can read and write hydration data to Apple Health. You can enable or
+        disable this in Settings → Health. All data stays on your device and is never sent
+        to our servers.
+      </div>
+      <div class="faq-answer-ru">
+        Да! AquaFlow умеет читать и записывать данные о гидратации в Apple Здоровье.
+        Включить или отключить синхронизацию можно в Настройках. Все данные хранятся
+        только на устройстве.
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I change the reminder schedule?</summary>
+      <div class="faq-answer">
+        Open the app, go to <strong>Settings → Reminders</strong>, and adjust the frequency,
+        active hours, and tone to your liking. You can also mute reminders on weekends.
+      </div>
+      <div class="faq-answer-ru">
+        Откройте приложение, перейдите в <strong>Настройки → Напоминания</strong> и настройте
+        частоту, активные часы и тон уведомлений. Можно отключить напоминания на выходные.
+      </div>
+    </details>
+
+  </section>
+
+  <!-- SUPPORT -->
+  <section>
+    <h2>Support</h2>
+    <p class="section-title-ru">Поддержка</p>
+    <div class="contact-box">
+      <p>Have a question or found a bug? We're happy to help — usually within 24 hours.</p>
+      <p class="ru">Есть вопрос или нашли ошибку? Мы ответим, как правило, в течение 24 часов.</p>
+      <a href="mailto:support@aquaflow.app">✉&nbsp; support@aquaflow.app</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <p>
+    <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="https://apps.apple.com/app/id000000000" target="_blank" rel="noopener">App Store</a>
+  </p>
+  <p style="margin-top:8px;">© 2026 AquaFlow. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
