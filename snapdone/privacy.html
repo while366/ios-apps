@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SnapDone Privacy Policy — your data stays on your device." />
+  <title>SnapDone — Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0f0f13;
+      --surface: #1a1a24;
+      --accent: #7c6af7;
+      --accent2: #a78bfa;
+      --green: #4ade80;
+      --text: #f0effe;
+      --text-muted: #8b8aa0;
+      --border: rgba(124, 106, 247, 0.15);
+      --radius: 14px;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* HEADER */
+    .page-header {
+      background: linear-gradient(160deg, #1a1433 0%, #0f0f13 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(74,222,128,0.1);
+      border: 1px solid rgba(74,222,128,0.2);
+      color: var(--green);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+    .page-header h1 {
+      font-size: clamp(1.6rem, 5vw, 2.4rem);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      background: linear-gradient(135deg, #fff 40%, var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 10px;
+    }
+    .page-header .app-name {
+      color: var(--accent2);
+      -webkit-text-fill-color: var(--accent2);
+    }
+    .meta {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      margin-top: 8px;
+    }
+    .summary-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(124,106,247,0.1);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      padding: 8px 20px;
+      font-size: 0.9rem;
+      color: var(--accent2);
+      font-weight: 500;
+      margin-top: 20px;
+    }
+
+    /* CONTENT */
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+    }
+
+    /* SECTION */
+    .policy-section {
+      margin-bottom: 40px;
+    }
+    .policy-section + .policy-section {
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+    }
+
+    .section-num {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 22px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .h2-ru {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      font-style: italic;
+      padding-left: 30px;
+    }
+    p {
+      color: #c0bedd;
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+    p.ru {
+      color: #6b6a80;
+      font-size: 0.86rem;
+      font-style: italic;
+      margin-bottom: 0;
+      padding-left: 0;
+      border-left: 2px solid rgba(124,106,247,0.2);
+      padding-left: 12px;
+      margin-top: 6px;
+    }
+    ul {
+      margin: 10px 0 10px 0;
+      padding-left: 0;
+      list-style: none;
+    }
+    ul li {
+      position: relative;
+      padding-left: 22px;
+      font-size: 0.93rem;
+      color: #c0bedd;
+      margin-bottom: 6px;
+    }
+    ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--accent2);
+      font-size: 0.85rem;
+    }
+    ul.ru-list { margin-top: 6px; }
+    ul.ru-list li { color: #6b6a80; font-size: 0.83rem; font-style: italic; }
+    ul.ru-list li::before { color: rgba(124,106,247,0.4); }
+
+    /* HIGHLIGHT BOX */
+    .highlight-box {
+      background: linear-gradient(135deg, rgba(74,222,128,0.07) 0%, rgba(124,106,247,0.07) 100%);
+      border: 1px solid rgba(74,222,128,0.18);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+    .highlight-box p { color: #c8efd6; font-weight: 500; margin: 0; }
+    .highlight-box p.ru { color: #5c7a63; border-left-color: rgba(74,222,128,0.15); margin-top: 6px; }
+
+    .contact-link {
+      color: var(--accent2);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact-link:hover { text-decoration: underline; }
+
+    /* DIVIDER */
+    .lang-divider {
+      text-align: center;
+      margin: 56px 0 48px;
+      position: relative;
+    }
+    .lang-divider::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: var(--border);
+    }
+    .lang-divider span {
+      position: relative;
+      background: var(--bg);
+      padding: 0 20px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 24px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--accent2); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 8px; }
+
+    @media (max-width: 480px) {
+      .page-header { padding: 36px 16px 32px; }
+      .container { padding: 32px 16px 48px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="page-header">
+    <div class="header-badge">🔒 Privacy First</div>
+    <h1>Privacy Policy</h1>
+    <h1 style="-webkit-text-fill-color: var(--accent2); font-size: 1.1rem; font-weight: 600; margin-top: 4px;">for <span class="app-name">SnapDone</span></h1>
+    <p class="meta">Effective date: March 2, 2026 &nbsp;·&nbsp; Last updated: March 2, 2026</p>
+    <div class="summary-pill">
+      ✅ No personal data collected &nbsp;·&nbsp; All data stays on your device
+    </div>
+  </div>
+
+  <!-- ENGLISH CONTENT -->
+  <div class="container">
+
+    <div class="policy-section">
+      <div class="highlight-box">
+        <p>🛡️ <strong>Short version:</strong> SnapDone does not collect, transmit, or share any personal data. Everything you create — habits, streaks, and photos — lives exclusively on your device.</p>
+        <p class="ru">Краткая версия: SnapDone не собирает, не передаёт и не использует личные данные. Все привычки, серии и фотографии хранятся исключительно на вашем устройстве.</p>
+      </div>
+    </div>
+
+    <!-- 1 -->
+    <div class="policy-section">
+      <h2><span class="section-num">1</span> Information We Collect</h2>
+      <p class="h2-ru">Информация, которую мы собираем</p>
+      <p>SnapDone does <strong>not collect any personal information</strong>. The app does not require account creation, does not connect to external servers, and does not transmit any data off your device.</p>
+      <p class="ru">SnapDone не собирает никакой личной информации. Приложение не требует создания аккаунта, не подключается к внешним серверам и не передаёт данные за пределы устройства.</p>
+      <p>All data created within the app — including habit records, streak counts, task notes, and photos — is stored locally using iOS system storage (UserDefaults and the device file system). This data never leaves your device unless you explicitly use an iOS system feature such as iCloud Backup or iTunes Backup.</p>
+      <p class="ru">Все данные — записи о привычках, серии, заметки и фотографии — хранятся локально в системном хранилище iOS. Данные не покидают устройство, если только вы не используете системные функции, такие как iCloud Backup.</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="policy-section">
+      <h2><span class="section-num">2</span> Photos &amp; Camera</h2>
+      <p class="h2-ru">Фотографии и камера</p>
+      <p>SnapDone may request access to your camera and photo library to allow you to snap photos as proof of completed tasks. This is core functionality of the app.</p>
+      <p class="ru">SnapDone может запрашивать доступ к камере и галерее для создания фотографий как подтверждения выполненных задач.</p>
+      <ul>
+        <li>Photos are saved <strong>only on your device</strong> — in the app's private sandboxed storage.</li>
+        <li>Photos are <strong>never uploaded</strong> to any server or third-party service.</li>
+        <li>You can revoke camera access at any time in iOS Settings → Privacy → Camera.</li>
+      </ul>
+      <ul class="ru-list">
+        <li>Фотографии сохраняются только на вашем устройстве — в изолированном хранилище приложения.</li>
+        <li>Фотографии никогда не загружаются на сервер или в сторонние сервисы.</li>
+        <li>Доступ к камере можно отозвать в «Настройки → Конфиденциальность → Камера».</li>
+      </ul>
+    </div>
+
+    <!-- 3 -->
+    <div class="policy-section">
+      <h2><span class="section-num">3</span> Analytics &amp; Tracking</h2>
+      <p class="h2-ru">Аналитика и отслеживание</p>
+      <p>SnapDone contains <strong>no analytics SDKs</strong>, no crash-reporting tools, no advertising networks, and no third-party tracking of any kind.</p>
+      <p class="ru">SnapDone не содержит аналитических SDK, инструментов отчётности о сбоях, рекламных сетей и сторонних систем отслеживания.</p>
+      <ul>
+        <li>No Firebase, no Google Analytics, no Amplitude, no Mixpanel.</li>
+        <li>No advertising identifiers (IDFA) are accessed or used.</li>
+        <li>No cookies or web beacons.</li>
+      </ul>
+      <ul class="ru-list">
+        <li>Нет Firebase, Google Analytics, Amplitude, Mixpanel.</li>
+        <li>Рекламные идентификаторы (IDFA) не используются.</li>
+        <li>Нет куки-файлов или веб-маяков.</li>
+      </ul>
+    </div>
+
+    <!-- 4 -->
+    <div class="policy-section">
+      <h2><span class="section-num">4</span> HealthKit (If Applicable)</h2>
+      <p class="h2-ru">HealthKit (если применимо)</p>
+      <p>If SnapDone integrates with Apple HealthKit in the future, any health data accessed will be:</p>
+      <ul>
+        <li>Read or written <strong>only with your explicit permission</strong>.</li>
+        <li>Stored only on your device — never transmitted to our servers or any third party.</li>
+        <li>Used solely to enhance your in-app habit and goal tracking experience.</li>
+      </ul>
+      <ul class="ru-list">
+        <li>Считываться или записываться только с вашего явного разрешения.</li>
+        <li>Храниться только на устройстве — не передаваться нам или третьим лицам.</li>
+        <li>Использоваться исключительно для улучшения отслеживания привычек.</li>
+      </ul>
+    </div>
+
+    <!-- 5 -->
+    <div class="policy-section">
+      <h2><span class="section-num">5</span> Data Sharing</h2>
+      <p class="h2-ru">Передача данных</p>
+      <p>We do not sell, trade, rent, or otherwise transfer your information to outside parties. There is no data to share — we don't have it.</p>
+      <p class="ru">Мы не продаём, не обмениваем и не передаём вашу информацию третьим лицам. Мы не имеем доступа к вашим данным — они хранятся только у вас.</p>
+    </div>
+
+    <!-- 6 -->
+    <div class="policy-section">
+      <h2><span class="section-num">6</span> Children's Privacy</h2>
+      <p class="h2-ru">Конфиденциальность детей</p>
+      <p>SnapDone does not knowingly collect any information from children under the age of 13. Since we collect no personal data at all, the app is safe for users of all ages.</p>
+      <p class="ru">SnapDone не собирает информацию о детях до 13 лет. Поскольку мы не собираем личные данные вообще, приложение безопасно для пользователей любого возраста.</p>
+    </div>
+
+    <!-- 7 -->
+    <div class="policy-section">
+      <h2><span class="section-num">7</span> Changes to This Policy</h2>
+      <p class="h2-ru">Изменения в политике</p>
+      <p>We may update this Privacy Policy from time to time. Any changes will be reflected here with an updated effective date. We encourage you to review this page periodically.</p>
+      <p class="ru">Мы можем периодически обновлять эту политику. Изменения будут отражены здесь с обновлённой датой. Рекомендуем периодически проверять эту страницу.</p>
+    </div>
+
+    <!-- 8 CONTACT -->
+    <div class="policy-section">
+      <h2><span class="section-num">8</span> Contact Us</h2>
+      <p class="h2-ru">Свяжитесь с нами</p>
+      <p>If you have any questions or concerns about this Privacy Policy, please reach out:</p>
+      <p class="ru">Если у вас есть вопросы или замечания по этой политике конфиденциальности, свяжитесь с нами:</p>
+      <p style="margin-top: 14px;">
+        📧 <a class="contact-link" href="mailto:support@snapdone.app">support@snapdone.app</a>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Support / Поддержка</a>
+      <a href="mailto:support@snapdone.app">Contact</a>
+    </div>
+    <p>© 2026 SnapDone. All rights reserved. &nbsp;·&nbsp; Privacy Policy</p>
+  </footer>
+
+</body>
+</html>
