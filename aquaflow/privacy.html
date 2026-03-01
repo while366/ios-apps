@@ -3,282 +3,191 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="AquaFlow Privacy Policy — we do not collect personal data." />
   <title>AquaFlow — Privacy Policy</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
       --blue-dark:  #0a6ebd;
-      --blue:       #1a8fe3;
-      --blue-pale:  #e8f5ff;
-      --blue-mid:   #cce9ff;
-      --text:       #1a2533;
-      --text-sub:   #4a6078;
+      --blue-mid:   #1a9de0;
+      --blue-light: #e8f6fd;
+      --blue-pale:  #f4faff;
+      --text-main:  #1a2a3a;
+      --text-muted: #5a7a9a;
+      --border:     #d0e8f5;
       --white:      #ffffff;
       --radius:     14px;
-      --shadow:     0 4px 24px rgba(10, 110, 189, 0.10);
     }
-
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
       background: var(--blue-pale);
-      color: var(--text);
+      color: var(--text-main);
       line-height: 1.7;
-      min-height: 100vh;
+      font-size: 16px;
     }
-
-    /* ── HEADER ── */
     header {
-      background: linear-gradient(145deg, #0a6ebd 0%, #1a8fe3 60%, #4db8ff 100%);
-      color: var(--white);
-      padding: 48px 24px 36px;
+      background: linear-gradient(135deg, #0a6ebd 0%, #1ab8f0 100%);
+      color: #fff;
       text-align: center;
+      padding: 52px 24px 44px;
     }
-    header .app-icon { font-size: 48px; margin-bottom: 12px; }
-    header h1 { font-size: clamp(1.5rem, 5vw, 2.2rem); font-weight: 700; margin-bottom: 6px; }
-    header .date { opacity: 0.75; font-size: 0.88rem; }
-    header a {
-      display: inline-block;
-      margin-top: 18px;
-      color: var(--white);
-      opacity: 0.85;
-      font-size: 0.9rem;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(255,255,255,0.45);
+    header .icon { font-size: 56px; margin-bottom: 14px; }
+    header h1 { font-size: clamp(1.6rem, 5vw, 2.4rem); font-weight: 800; margin-bottom: 6px; }
+    header .sub { font-size: .95rem; opacity: .78; }
+    header .back-link {
+      display: inline-block; margin-top: 20px; color: rgba(255,255,255,.8);
+      text-decoration: none; font-size: .88rem;
+      border: 1px solid rgba(255,255,255,.4); padding: 6px 18px;
+      border-radius: 50px; transition: background .2s;
     }
-    header a:hover { opacity: 1; }
-
-    /* ── MAIN ── */
-    main { max-width: 720px; margin: 0 auto; padding: 36px 20px 60px; }
-
-    /* ── BADGE ── */
-    .badge-no-data {
-      background: linear-gradient(135deg, #d4f5d4, #a8e6a8);
-      border: 1px solid #7acc7a;
-      border-radius: 10px;
-      padding: 18px 22px;
-      margin-bottom: 24px;
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
+    header .back-link:hover { background: rgba(255,255,255,.15); }
+    main { max-width: 680px; margin: 0 auto; padding: 40px 20px 64px; }
+    .badge-row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 32px; }
+    .badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--white); border: 1.5px solid var(--border);
+      color: var(--blue-dark); font-size: .8rem; font-weight: 600;
+      padding: 5px 14px; border-radius: 50px;
     }
-    .badge-no-data .icon { font-size: 2rem; flex-shrink: 0; }
-    .badge-no-data h2 { font-size: 1rem; font-weight: 700; color: #1a5c1a; margin-bottom: 3px; }
-    .badge-no-data p  { font-size: 0.88rem; color: #2e7a2e; margin: 0; }
-    .badge-no-data p.ru { font-size: 0.81rem; color: #3d8c3d; font-style: italic; margin-top: 3px; }
-
-    /* ── CARD ── */
     .card {
-      background: var(--white);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 28px 26px;
-      margin-bottom: 20px;
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 28px 26px; margin-bottom: 20px;
+      box-shadow: 0 2px 12px rgba(10,110,189,.06);
     }
     .card h2 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--blue-dark);
-      margin-bottom: 3px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      font-size: 1.1rem; font-weight: 700; color: var(--blue-dark);
+      margin-bottom: 4px; display: flex; align-items: center; gap: 9px;
     }
-    .card h2 .sec-icon { font-size: 1.2rem; }
-    .card .ru-title {
-      font-size: 0.80rem;
-      color: var(--text-sub);
-      font-style: italic;
-      margin-bottom: 14px;
+    .lang-tag {
+      font-size: .72rem; background: var(--blue-light); color: var(--blue-mid);
+      font-weight: 600; padding: 2px 8px; border-radius: 6px;
+      letter-spacing: .4px; text-transform: uppercase;
     }
-    .card p       { font-size: 0.93rem; color: var(--text-sub); margin-bottom: 8px; }
-    .card p:last-child { margin-bottom: 0; }
-    .card p.ru    { font-size: 0.84rem; color: #7a90a8; font-style: italic; margin-top: -4px; }
-    .card ul { padding-left: 20px; margin: 8px 0 12px; }
-    .card ul li { font-size: 0.92rem; color: var(--text-sub); margin-bottom: 5px; }
-    .card ul li.ru { font-size: 0.83rem; color: #7a90a8; font-style: italic; }
-
-    hr.lang-divider {
-      border: none;
-      border-top: 2px dashed var(--blue-mid);
-      margin: 18px 0;
+    .card p { font-size: .93rem; color: var(--text-muted); margin-top: 12px; }
+    .card p strong { color: var(--text-main); }
+    .highlight {
+      background: linear-gradient(135deg, var(--blue-light), #daf0fc);
+      border-left: 4px solid var(--blue-mid); border-radius: 10px;
+      padding: 16px 18px; margin-top: 14px; font-size: .91rem; color: var(--text-main);
     }
-
-    /* ── CONTACT ── */
-    .contact-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--blue);
-      color: var(--white);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.93rem;
-      padding: 10px 20px;
-      border-radius: 50px;
-      margin-top: 10px;
-      transition: background 0.15s;
+    .lang-divider {
+      display: flex; align-items: center; gap: 12px; margin: 18px 0 14px;
+      font-size: .78rem; color: var(--text-muted); font-weight: 600;
+      letter-spacing: .5px; text-transform: uppercase;
     }
-    .contact-link:hover { background: var(--blue-dark); }
-
-    /* ── FOOTER ── */
+    .lang-divider::before, .lang-divider::after {
+      content: ""; flex: 1; height: 1px; background: var(--border);
+    }
     footer {
-      text-align: center;
-      padding: 24px 20px 40px;
-      font-size: 0.82rem;
-      color: var(--text-sub);
+      background: var(--text-main); color: rgba(255,255,255,.5);
+      text-align: center; padding: 26px 20px; font-size: .81rem;
     }
-    footer a { color: var(--blue); text-decoration: none; }
+    footer a { color: #4db8ff; text-decoration: none; }
     footer a:hover { text-decoration: underline; }
-
     @media (max-width: 480px) {
-      header { padding: 36px 16px 28px; }
       .card { padding: 20px 16px; }
-      .badge-no-data { flex-direction: column; gap: 8px; }
+      header { padding: 40px 18px 34px; }
     }
   </style>
 </head>
 <body>
 
-<!-- ══════════════ HEADER ══════════════ -->
 <header>
-  <div class="app-icon">💧</div>
-  <h1>Privacy Policy for AquaFlow</h1>
-  <p class="date">Effective date: March 2, 2026</p>
-  <a href="index.html">← Back to Support</a>
+  <div class="icon">🔒</div>
+  <h1>Privacy Policy</h1>
+  <p class="sub">AquaFlow — Water Tracker &amp; Hydration Reminder</p>
+  <a class="back-link" href="index.html">← Back to Support</a>
 </header>
 
-<!-- ══════════════ MAIN ══════════════ -->
 <main>
 
-  <!-- BADGE -->
-  <div class="badge-no-data">
-    <div class="icon">🔒</div>
-    <div>
-      <h2>We do not collect your personal data.</h2>
-      <p>AquaFlow works entirely on your device. No accounts, no servers, no tracking.</p>
-      <p class="ru">AquaFlow работает полностью на вашем устройстве. Никаких аккаунтов, серверов или слежки.</p>
-    </div>
+  <div class="badge-row">
+    <span class="badge">📅 Effective: 2026-03-02</span>
+    <span class="badge">✅ No data collection</span>
+    <span class="badge">📱 Local storage only</span>
   </div>
 
-  <!-- 1. Information We Collect -->
   <div class="card">
-    <h2><span class="sec-icon">📋</span> 1. Information We Collect</h2>
-    <p class="ru-title">1. Какие данные мы собираем</p>
-
-    <p><strong>We collect no personal information.</strong> AquaFlow does not require an account, email address, or any identifying information to function.</p>
-    <p>All data you enter (daily water logs, goals, drink types, reminders) is stored <strong>locally on your device</strong> using Apple's secure on-device storage.</p>
-
-    <hr class="lang-divider" />
-
-    <p class="ru"><strong>Мы не собираем личных данных.</strong> AquaFlow не требует аккаунта, адреса электронной почты или какой-либо идентифицирующей информации.</p>
-    <p class="ru">Все данные, которые вы вводите (ежедневные записи, цели, типы напитков, напоминания), хранятся <strong>локально на вашем устройстве</strong> в безопасном хранилище Apple.</p>
+    <h2>📋 Overview <span class="lang-tag">EN</span></h2>
+    <p>AquaFlow ("we", "us", "our") is a hydration tracking app for iOS. Your privacy is important to us. This policy explains what information AquaFlow handles and how it is used.</p>
+    <div class="highlight"><strong>Short version:</strong> AquaFlow does <strong>not</strong> collect, store, or transmit any personal data to external servers. Everything stays on your device.</div>
+    <div class="lang-divider">RU</div>
+    <p>AquaFlow — это iOS-приложение для отслеживания потребления воды. Мы уважаем вашу конфиденциальность. Данная политика объясняет, как приложение работает с информацией.</p>
+    <div class="highlight"><strong>Коротко:</strong> AquaFlow <strong>не собирает</strong>, не хранит и не передаёт личные данные на внешние серверы. Всё остаётся на вашем устройстве.</div>
   </div>
 
-  <!-- 2. Health Data -->
   <div class="card">
-    <h2><span class="sec-icon">❤️</span> 2. Health Data &amp; Apple Health</h2>
-    <p class="ru-title">2. Данные о здоровье и Apple Здоровье</p>
-
-    <p>AquaFlow may request permission to read from and write to the <strong>Apple Health</strong> app (HealthKit). This integration is <em>entirely optional</em>.</p>
-    <ul>
-      <li>Health data is accessed <strong>only on your device</strong>.</li>
-      <li>We do <strong>not</strong> transmit HealthKit data to our servers or any third party.</li>
-      <li>We do <strong>not</strong> use HealthKit data for advertising or data-mining.</li>
-      <li>You can revoke Health access at any time in <em>iOS Settings → Privacy &amp; Security → Health → AquaFlow</em>.</li>
-    </ul>
-
-    <hr class="lang-divider" />
-
-    <p class="ru">AquaFlow может запросить разрешение на чтение и запись данных в приложение <strong>Apple Здоровье</strong> (HealthKit). Эта интеграция <em>полностью необязательна</em>.</p>
-    <ul>
-      <li class="ru">Данные о здоровье обрабатываются <strong>только на вашем устройстве</strong>.</li>
-      <li class="ru">Мы <strong>не</strong> передаём данные HealthKit на серверы или третьим лицам.</li>
-      <li class="ru">Мы <strong>не</strong> используем данные HealthKit для рекламы или анализа.</li>
-      <li class="ru">Вы можете отозвать доступ в любое время: <em>Настройки iOS → Конфиденциальность → Здоровье → AquaFlow</em>.</li>
-    </ul>
+    <h2>💾 Data Stored on Your Device <span class="lang-tag">EN</span></h2>
+    <p>AquaFlow stores the following data <strong>locally on your iPhone/iPad only</strong>:</p>
+    <p>• Hydration log entries (amount, time, drink type)</p>
+    <p>• Daily goal and personalisation settings (weight, activity level)</p>
+    <p>• Reminder preferences</p>
+    <p>This data is never transmitted off your device. It may be backed up via <strong>iCloud</strong> if you have iCloud Backup enabled — governed by Apple's privacy policy.</p>
+    <div class="lang-divider">RU</div>
+    <p>AquaFlow хранит следующие данные <strong>только локально на вашем iPhone/iPad</strong>:</p>
+    <p>• Записи о потреблении воды (объём, время, тип напитка)</p>
+    <p>• Суточная цель и настройки (вес, уровень активности)</p>
+    <p>• Параметры напоминаний</p>
+    <p>Эти данные никогда не покидают ваше устройство. Они могут быть включены в резервную копию <strong>iCloud</strong>, если вы включили резервное копирование — регулируется политикой конфиденциальности Apple.</p>
   </div>
 
-  <!-- 3. Analytics & Third Parties -->
   <div class="card">
-    <h2><span class="sec-icon">📵</span> 3. Analytics &amp; Third-Party SDKs</h2>
-    <p class="ru-title">3. Аналитика и сторонние SDK</p>
-
-    <p>AquaFlow contains <strong>no analytics tools, no advertising SDKs, and no third-party tracking libraries</strong>. We do not use Firebase, Amplitude, Mixpanel, Google Analytics, or any similar service.</p>
-
-    <hr class="lang-divider" />
-
-    <p class="ru">AquaFlow не содержит <strong>инструментов аналитики, рекламных SDK и сторонних библиотек слежения</strong>. Мы не используем Firebase, Amplitude, Mixpanel, Google Analytics или аналогичные сервисы.</p>
+    <h2>❤️ Apple Health (HealthKit) <span class="lang-tag">EN</span></h2>
+    <p>AquaFlow may request permission to read and write <strong>water intake data</strong> to Apple Health. This integration is entirely <strong>optional</strong>.</p>
+    <p>HealthKit data is processed <strong>on-device only</strong>. We do not send any HealthKit data to external servers, and we do not use it for advertising or analytics purposes.</p>
+    <div class="lang-divider">RU</div>
+    <p>AquaFlow может запросить разрешение на запись данных о <strong>потреблении воды</strong> в Apple Здоровье. Эта интеграция полностью <strong>опциональна</strong>.</p>
+    <p>Данные HealthKit обрабатываются <strong>только на устройстве</strong>. Мы не отправляем их на внешние серверы и не используем в рекламных или аналитических целях.</p>
   </div>
 
-  <!-- 4. Notifications -->
   <div class="card">
-    <h2><span class="sec-icon">🔔</span> 4. Notifications</h2>
-    <p class="ru-title">4. Уведомления</p>
-
-    <p>If you enable reminders, AquaFlow uses <strong>local notifications</strong> — scheduled entirely on your device. No data leaves your phone to deliver these reminders.</p>
-
-    <hr class="lang-divider" />
-
-    <p class="ru">Если вы включите напоминания, AquaFlow использует <strong>локальные уведомления</strong>, которые планируются целиком на вашем устройстве. Никакие данные не покидают телефон для их доставки.</p>
+    <h2>📵 No Analytics &amp; No Third-Party SDKs <span class="lang-tag">EN</span></h2>
+    <p>AquaFlow contains <strong>no third-party analytics SDKs, advertising SDKs, or tracking libraries</strong>. We do not use:</p>
+    <p>• Firebase, Google Analytics, or similar services</p>
+    <p>• Facebook SDK or any social media SDKs</p>
+    <p>• Crash reporting tools that transmit data externally</p>
+    <p>We may review anonymised, aggregated crash reports provided by Apple via App Store Connect. These reports cannot be linked to any individual.</p>
+    <div class="lang-divider">RU</div>
+    <p>AquaFlow не содержит <strong>сторонних аналитических SDK, рекламных SDK или библиотек отслеживания</strong>. Мы не используем:</p>
+    <p>• Firebase, Google Analytics и подобные сервисы</p>
+    <p>• Facebook SDK или SDK социальных сетей</p>
+    <p>• Инструменты отчётов о сбоях, передающие данные внешним сервисам</p>
+    <p>Мы можем просматривать анонимные агрегированные отчёты о сбоях от Apple. Эти отчёты не позволяют идентифицировать конкретного пользователя.</p>
   </div>
 
-  <!-- 5. Data Retention -->
   <div class="card">
-    <h2><span class="sec-icon">🗑️</span> 5. Data Retention &amp; Deletion</h2>
-    <p class="ru-title">5. Хранение и удаление данных</p>
-
-    <p>Your data lives on your device and is backed up via iCloud only if you have iCloud Backup enabled in iOS Settings. You can delete all app data at any time by uninstalling AquaFlow.</p>
-
-    <hr class="lang-divider" />
-
-    <p class="ru">Ваши данные хранятся на устройстве и резервируются через iCloud только если вы включили резервное копирование iCloud в настройках iOS. Вы можете удалить все данные в любое время, удалив приложение.</p>
+    <h2>🔑 No Accounts Required <span class="lang-tag">EN</span></h2>
+    <p>AquaFlow does not require you to create an account or provide any personal information (name, email, phone number). The app functions fully offline without any registration.</p>
+    <div class="lang-divider">RU</div>
+    <p>AquaFlow не требует создания аккаунта или предоставления личных данных (имя, email, телефон). Приложение полностью работает офлайн без какой-либо регистрации.</p>
   </div>
 
-  <!-- 6. Children -->
   <div class="card">
-    <h2><span class="sec-icon">👶</span> 6. Children's Privacy</h2>
-    <p class="ru-title">6. Конфиденциальность детей</p>
-
-    <p>AquaFlow does not knowingly collect any information from children under 13. Since the app collects no data at all, it is safe for users of all ages.</p>
-
-    <hr class="lang-divider" />
-
-    <p class="ru">AquaFlow не собирает данные о детях до 13 лет. Поскольку приложение вообще не собирает данные, оно безопасно для пользователей любого возраста.</p>
+    <h2>👶 Children's Privacy <span class="lang-tag">EN</span></h2>
+    <p>AquaFlow does not knowingly collect information from children under 13. Since no personal data is collected at all, the app is safe for users of all ages.</p>
+    <div class="lang-divider">RU</div>
+    <p>AquaFlow не собирает намеренно информацию о детях младше 13 лет. Поскольку личные данные не собираются в принципе, приложение безопасно для пользователей любого возраста.</p>
   </div>
 
-  <!-- 7. Changes -->
   <div class="card">
-    <h2><span class="sec-icon">📝</span> 7. Changes to This Policy</h2>
-    <p class="ru-title">7. Изменения в политике</p>
-
-    <p>If we make material changes, the updated policy will be posted at this URL with a new effective date. We encourage you to review this page periodically.</p>
-
-    <hr class="lang-divider" />
-
-    <p class="ru">В случае существенных изменений обновлённая политика будет опубликована по этому URL с новой датой вступления в силу. Рекомендуем периодически проверять эту страницу.</p>
+    <h2>📝 Changes to This Policy <span class="lang-tag">EN</span></h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will update the effective date at the top of this page. We encourage you to review it periodically.</p>
+    <div class="lang-divider">RU</div>
+    <p>Мы можем периодически обновлять эту Политику конфиденциальности. При обновлении мы изменяем дату вступления в силу. Рекомендуем периодически просматривать данную политику.</p>
   </div>
 
-  <!-- 8. Contact -->
   <div class="card">
-    <h2><span class="sec-icon">✉️</span> 8. Contact Us</h2>
-    <p class="ru-title">8. Связаться с нами</p>
-
-    <p>Questions about this Privacy Policy? We're here to help.</p>
-    <p class="ru">Вопросы по этой политике конфиденциальности? Мы готовы помочь.</p>
-    <a class="contact-link" href="mailto:support@aquaflow.app">✉&nbsp; support@aquaflow.app</a>
+    <h2>✉️ Contact Us <span class="lang-tag">EN</span></h2>
+    <p>If you have any questions about this Privacy Policy, please contact us:</p>
+    <p><a href="mailto:support@aquaflow.app" style="color:var(--blue-dark);font-weight:600;text-decoration:none;">support@aquaflow.app</a></p>
+    <div class="lang-divider">RU</div>
+    <p>Если у вас есть вопросы по данной Политике конфиденциальности, свяжитесь с нами:</p>
+    <p><a href="mailto:support@aquaflow.app" style="color:var(--blue-dark);font-weight:600;text-decoration:none;">support@aquaflow.app</a></p>
   </div>
 
 </main>
 
-<!-- ══════════════ FOOTER ══════════════ -->
 <footer>
-  <p>
-    <a href="index.html">← Support Page</a>
-    &nbsp;·&nbsp;
-    <a href="https://apps.apple.com/app/id000000000" target="_blank" rel="noopener">App Store</a>
-  </p>
+  <p><a href="index.html">Support</a> &nbsp;·&nbsp; <a href="mailto:support@aquaflow.app">Contact</a></p>
   <p style="margin-top:8px;">© 2026 AquaFlow. All rights reserved.</p>
 </footer>
 
